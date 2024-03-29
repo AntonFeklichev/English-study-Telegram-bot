@@ -1,0 +1,34 @@
+Hibernate: select e1_0.id,e1_0.word_id from english e1_0 join words w1_0 on w1_0.id=e1_0.word_id where w1_0.words_word like (?||'%') escape ''
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select w1_0.id,w1_0.words_word from words w1_0 where w1_0.id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+Hibernate: select r1_0.english_id,r1_1.id,r1_1.words_word from english_russian r1_0 join words r1_1 on r1_1.id=r1_0.russian_id where r1_0.english_id=?
+2024-03-29T13:54:43.977+03:00  INFO 19720 --- [telegram-bot] [legram Executor] o.t.abilitybots.api.bot.BaseAbilityBot   : [ES8924bot] Processing of update [926485255] ended at 2024-03-29T13:54:43.976238800+03:00[Europe/Moscow]
+---> Processing time: [687 ms] <---
+

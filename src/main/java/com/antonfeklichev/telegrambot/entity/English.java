@@ -21,8 +21,8 @@ public class English {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @PrimaryKeyJoinColumn
-    //@Column(name = "english_words")
+    //@PrimaryKeyJoinColumn
+    //@JoinColumn(name = "english_words")
     @OneToOne
     @Cascade(CascadeType.PERSIST)
     private Word word;
@@ -51,9 +51,8 @@ public class English {
 
     @Override
     public String toString() {
-        return "English{" +
-               "word=" + word +
-               ", russian=" + russian +
-               '}';
+
+        return word + ": " + russian;
+
     }
 }
