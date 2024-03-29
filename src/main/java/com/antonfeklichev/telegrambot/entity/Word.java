@@ -40,4 +40,11 @@ public class Word {
     public int hashCode() {
         return Objects.hash(id, word);
     }
+
+    @Override
+    public String toString() {
+        return "Word{" +
+               "word='" + word + '\'' +
+               '}';
+    }
 }

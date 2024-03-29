@@ -27,7 +27,7 @@ public class English {
     @Cascade(CascadeType.PERSIST)
     private Word word;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @Cascade(value = CascadeType.PERSIST)
     private List<Word> russian;
 
@@ -47,5 +47,13 @@ public class English {
     @Override
     public int hashCode() {
         return Objects.hash(id, word);
+    }
+
+    @Override
+    public String toString() {
+        return "English{" +
+               "word=" + word +
+               ", russian=" + russian +
+               '}';
     }
 }
