@@ -26,7 +26,6 @@ public class FileReader implements CommandLineRunner {
     @Transactional
     public void run(String... args) throws Exception {
 
-        //java.io.FileReader fileReader = new java.io.FileReader(filename);
         try (BufferedReader bufferedReader = new BufferedReader(new java.io.FileReader(filename))) {
             bufferedReader.lines().forEach(s -> {
                 String[] strings = s.split(" — ");

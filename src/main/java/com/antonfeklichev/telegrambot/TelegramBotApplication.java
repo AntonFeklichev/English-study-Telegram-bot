@@ -8,14 +8,10 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 @SpringBootApplication
 public class TelegramBotApplication {
-//    @Autowired
-//    MyAmazingBot myAmazingBot;
+
 
     public static void main(String[] args) throws Exception {
 
-
-//        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-//        botsApi.registerBot(new MyAmazingBot());
 
         var ctx = SpringApplication.run(TelegramBotApplication.class, args);
 

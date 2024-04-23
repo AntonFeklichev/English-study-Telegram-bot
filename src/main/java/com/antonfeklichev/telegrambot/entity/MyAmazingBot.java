@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.abilitybots.api.bot.AbilityBot;
 import org.telegram.abilitybots.api.objects.Ability;
+import org.telegram.telegrambots.meta.api.methods.updatingmessages.DeleteMessage;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -36,11 +37,31 @@ public class MyAmazingBot extends AbilityBot {
         return 1L;
     }
 
+
+    public Ability delete() {
+        return Ability
+                .builder()
+                .name("delete")
+                .info("Deletes the bot's last message")
+                .locality(ALL)
+                .privacy(PUBLIC)
+                .action(ctx -> {
+                    long chatId = ctx.chatId();
+                    String stringByChatId = String.valueOf(chatId);
+                    int messageId = ctx.update().getMessage().getMessageId();
+                    silent.execute(new DeleteMessage(stringByChatId, messageId));
+
+                })
+                .build();
+    }
+
+
     public Ability translate() {
         return Ability
                 .builder()
                 .name("translate")
                 .info("says hello world!")
+                .input(1)
                 .locality(ALL)
                 .privacy(PUBLIC)
                 .action(ctx -> {
